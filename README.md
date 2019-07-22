@@ -25,7 +25,7 @@ Api Rest desenvolvida em laravel
 # EndPoints
 
 - 1 :  POST localhost:8000/oauth/token
-    \`
+    ```
      {
       	"client_id":2,
       	"client_secret":"NRCx71HwSJ0VCNCgRkw8wVI73vSmCwyWEIsb0qLG",
@@ -33,10 +33,10 @@ Api Rest desenvolvida em laravel
       	"username":"leivitoncs@gmail.com",
       	"password":"123456"
      }
-      `\
+      ```
   
 - 2 : POST localhost:8000/api/v1/admin/user
-    \`
+    ```
     {
     	"name":"Leiviton Carlos",
     	"email":"leivitonpj@gmail.com",
@@ -44,9 +44,9 @@ Api Rest desenvolvida em laravel
     	"cpf":"11122233344",
     	"role":"solicitante"
     }
-    `\
+    ```
 - 3 : GET localhost:8000/api/v1/admin/user?status=ativo
-    \`
+    ```
     {
       "data": [
         {
@@ -91,4 +91,4 @@ Api Rest desenvolvida em laravel
         }
       }
     }
-    `\
+    ```
