@@ -1,6 +1,6 @@
 <?php
 
-use App\User;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class UserTableSeeder extends Seeder
@@ -17,6 +17,8 @@ class UserTableSeeder extends Seeder
                 'name' => 'Leiviton Carlos',
                 'email' => 'leivitoncs@gmail.com',
                 'role' => 'admin',
+                'status' => 'ativo',
+                'cpf' => '08967095660',
                 'password' => bcrypt(123456),
                 'remember_token' => str_random(10),
             ]);
@@ -24,8 +26,10 @@ class UserTableSeeder extends Seeder
         factory(User::class)->create(
             [
                 'name' => 'Vagner Silva',
-                'email' => 'vagnerleitte@outlook.com ',
+                'email' => 'vagnerleitte@outlook.com',
                 'role' => 'admin',
+                'status' => 'ativo',
+                'cpf' => '08967095661',
                 'password' => bcrypt(123456),
                 'remember_token' => str_random(10),
             ]);
