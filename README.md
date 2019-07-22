@@ -33,7 +33,7 @@ Api Rest desenvolvida em laravel
       	"username":"leivitoncs@gmail.com",
       	"password":"123456"
      }
-      ```
+    ```
   
 - 2 : POST localhost:8000/api/v1/admin/user
     ```
