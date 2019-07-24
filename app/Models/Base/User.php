@@ -18,6 +18,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * @property string $role
  * @property string $status
  * @property string $cpf
+ * @property string $rg
  * @property \Carbon\Carbon $email_verified_at
  * @property string $password
  * @property string $remember_token

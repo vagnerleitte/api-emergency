@@ -19,6 +19,7 @@ class UserTableSeeder extends Seeder
                 'role' => 'admin',
                 'status' => 'ativo',
                 'cpf' => '08967095660',
+                'rg' => '08967095660',
                 'password' => bcrypt(123456),
                 'remember_token' => str_random(10),
             ]);
@@ -30,6 +31,7 @@ class UserTableSeeder extends Seeder
                 'role' => 'admin',
                 'status' => 'ativo',
                 'cpf' => '08967095661',
+                'rg' => '08967095661',
                 'password' => bcrypt(123456),
                 'remember_token' => str_random(10),
             ]);

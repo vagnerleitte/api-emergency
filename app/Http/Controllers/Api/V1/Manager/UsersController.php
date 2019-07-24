@@ -35,7 +35,8 @@ class UsersController extends  Controller
             'name' => 'required|min:4',
             'email' => 'required|email|unique:users,email',
             'role' => 'required',
-            'cpf' => 'required|unique:users,cpf'
+            'cpf' => 'required|unique:users,cpf',
+            'rg' => 'required|unique:users,rg'
         ], [
             'name.required' => 'Nome do usuário é obrigatório',
             'name.length' => 'Nome deve conter no minimo 4 caracteres',
@@ -43,7 +44,9 @@ class UsersController extends  Controller
             'email.unique' => 'Email já está em uso no sistema',
             'role.required' => 'Tipo de usuário é obrigatório',
             'cpf.required' => 'CPF do usuário é obrigatório',
-            'cpf.unique' => 'CPF do usuário já cadastrado'
+            'cpf.unique' => 'CPF do usuário já cadastrado',
+            'rg.required' => 'RG do usuário é obrigatório',
+            'rg.unique' => 'RG do usuário já cadastrado'
         ]);
 
         if ($validator->fails()) {
