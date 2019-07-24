@@ -92,3 +92,19 @@ Api Rest desenvolvida em laravel
       }
     }
     ```
+ - 4 : GET localhost:8000/api/v1/admin/authenticated
+     ```
+     {
+       "data": {
+         "id": 1,
+         "name": "Leiviton Carlos",
+         "email": "leivitoncs@gmail.com",
+         "role": "admin",
+         "cpf": "08967095660",
+         "rg": null,
+         "status": "ativo",
+         "created_at": "2019-07-24T14:01:30.000000Z",
+         "updated_at": "2019-07-24T14:01:30.000000Z"
+       }
+     }
+     ```
