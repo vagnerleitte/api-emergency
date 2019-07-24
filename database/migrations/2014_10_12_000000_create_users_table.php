@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->enum('role',['admin','atendente','solicitante'])->default('atendente');
             $table->enum('status',['ativo','inativo'])->default('ativo');
             $table->string('cpf',14)->unique();
+            $table->string('rg',20)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

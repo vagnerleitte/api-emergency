@@ -50,7 +50,7 @@ class UserService
     {
         $user = $this->userRepository->find($id);
 
-        $user->last_login_at = Carbon::now()->toDateTimeString();
+        //$user->last_login_at = Carbon::now()->toDateTimeString();
 
         $user->save();
 

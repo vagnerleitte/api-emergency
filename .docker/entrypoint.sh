@@ -13,6 +13,4 @@ php artisan key:generate --force
 php artisan passport:install
 php artisan migrate:fresh --seed
 
-php artisan code:models --table=users
-
 php-fpm

@@ -33,7 +33,7 @@ class User extends \App\Models\Base\User implements  Transformable,Authenticatab
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','role','cpf','status'
+        'name', 'email', 'password','role','cpf','rg','status'
     ];
 
     /**
